@@ -30,37 +30,48 @@
     {#{#    {% endfor %}#}
 {##}
 {#</ul>#}
-<table>
-    <thead>
-        <tr>
-            <th>序号</th>
-            <th>书名</th>
-            <th>作者</th>
-            <th>价格</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for book in books %}
-            {% if forloop.first %}
-                <tr style="background: pink">
-                    {% elif forloop.last %}
-                <tr style="background: green">
-                {% else %}
-                <tr>
-            {% endif %}
-                <td>{{ forloop.counter0 }}</td>
-                <td>{{ book.name }}</td>
-                <td>{{ book.author }}</td>
-                <td>{{ book.price }}</td>
-            </tr>
-        {% endfor %}
-
-    </tbody>
-</table>
-{% for comment in comments %}
-    <li>{{ comment }}</li>
-    {% empty %}
-    <li>暂无评论</li>
-{% endfor %}
+{#<table>#}
+{#    <thead>#}
+{#        <tr>#}
+{#            <th>序号</th>#}
+{#            <th>书名</th>#}
+{#            <th>作者</th>#}
+{#            <th>价格</th>#}
+{#        </tr>#}
+{#    </thead>#}
+{#    <tbody>#}
+{#        {% for book in books %}#}
+{#            {% if forloop.first %}#}
+{#                <tr style="background: pink">#}
+{#                    {% elif forloop.last %}#}
+{#                <tr style="background: green">#}
+{#                {% else %}#}
+{#                <tr>#}
+{#            {% endif %}#}
+{#                <td>{{ forloop.counter0 }}</td>#}
+{#                <td>{{ book.name }}</td>#}
+{#                <td>{{ book.author }}</td>#}
+{#                <td>{{ book.price }}</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{##}
+{#    </tbody>#}
+{#</table>#}
+{#{% for comment in comments %}#}
+{#    <li>{{ comment }}</li>#}
+{#    {% empty %}#}
+{#    <li>暂无评论</li>#}
+{#{% endfor %}#}
+{{ persons.0 }}
+{#    {% with  persons.0 as p %}#}
+{#        <p>{{ p }}</p>#}
+{#        <p>{{ p }}</p>#}
+{#        <p>{{ p }}</p>#}
+{#        <p>{{ p }}</p>#}
+{#    {% endwith %}#}
+    {% with zs=persons.1 %}
+        <p>{{ zs }}</p>
+    {% endwith %}
+    {{ zs }}
 </body>
 </html>
