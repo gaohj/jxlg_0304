@@ -1,4 +1,4 @@
-"""firstproject02 URL Configuration
+"""namespace_demo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -15,19 +15,9 @@ Including another URLconf
 """
 
 from django.urls import path,include
-#from django.http import HttpResponse #用来将内容返回给浏览器
-#参数为字符串
-# from book import views as book_view
-# from movie import views as movie_view
-# from shop import views as shop_view
-
-# def index(request):
-#     #request这个参数必须写  因为它包含我们前端所有的请求
-#     return HttpResponse("这是首页")
 
 urlpatterns = [
-    # path('index/',index),#http://127.0.0.1:80001
-    path('book/',include('book.urls')), #主url文件导入 模块图书的url
-    path('movie/',movie_view.movie),
-    path('shop/',shop_view.shop),
+    path('', include('front.urls')),
+    path('cms03/', include('cms.urls',namespace="cms03")),
+    path('cms04/', include('cms.urls',namespace="cms04")),
 ]
