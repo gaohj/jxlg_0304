@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+{#    {% if age < 18 %}#}
+{#        <p>未成年禁止入内</p>#}
+{#        {% elif age == 18 %}#}
+{#        <p>欢迎光临</p>#}
+{#        {% else %}#}
+{#        <p>玩什么玩,打球比蔡徐坤好么</p>#}
+{#    {% endif %}#}
+{#这是注释#}
+{#{% if '杜兰特' in heros %}#}
+{#    <p>健康的杜兰特猛龙真没啥机会</p>#}
+{#    {% else %}#}
+{#    <p>希望总决赛能抢七</p>#}
+{#{% endif %}#}
+{#<ul>#}
+{#   {% for person in persons %}#}
+{#        <li>{{ person }}</li>#}
+{#   {% endfor %}#}
+{##}
+{#    {% for key,value in persons.items  %}#}
+
+{#    <li>{{ key }}/{{ value }}</li>#}
+{#    #}
+    {#{#    {% endfor %}#}
+{##}
+{#</ul>#}
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>价格</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+            {% if forloop.first %}
+                <tr style="background: pink">
+                    {% elif forloop.last %}
+                <tr style="background: green">
+                {% else %}
+                <tr>
+            {% endif %}
+                <td>{{ forloop.counter0 }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+            </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% for comment in comments %}
+    <li>{{ comment }}</li>
+    {% empty %}
+    <li>暂无评论</li>
+{% endfor %}
+</body>
+</html>

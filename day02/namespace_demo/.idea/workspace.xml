@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc6acd74-b6de-49ed-bcbf-86ca844acbb9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/front/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repach_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../repach_demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dc6acd74-b6de-49ed-bcbf-86ca844acbb9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +15,7 @@
     <session id="1807325573">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -54,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="1050">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="28" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
                 <marker date="1560325365674" expanded="true" signature="664:669" ph="..." />
@@ -201,7 +197,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -276,8 +272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="1050">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
             <marker date="1560325365674" expanded="true" signature="664:669" ph="..." />
