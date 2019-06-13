@@ -1,0 +1,25 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>company</title>#}
+{#</head>#}
+{#<body>#}
+{#{% include 'header.html' with username='laohu'%}#}
+{#    <div class="content">#}
+{#       这是公司页面#}
+{#        {{ username }}#}
+{#    </div>#}
+{#    {% include 'footer.html' %}#}
+{#</body>#}
+{#</html>#}
+
+{% extends 'base.html' %}
+
+{% block title %}
+公司首页
+{% endblock %}
+
+{% block content %}
+我是公司内容
+{% endblock %}

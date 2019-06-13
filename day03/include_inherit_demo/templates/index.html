@@ -1,0 +1,26 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>index</title>#}
+{#</head>#}
+{#<body>#}
+{#    {% include 'header.html' %}#}
+{#    <div class="content">#}
+{#        老虎不发威,当我是你男朋友#}
+{#        {{ username }}#}
+{#    </div>#}
+{#    {% include 'footer.html' %}#}
+{#</body>#}
+{#</html>#}
+
+{% extends 'base.html' %}
+
+{% block title %}
+    首页
+{% endblock %}
+
+{% block content %}
+    <p>{{ block.super }}</p>
+    我是首页内容
+{% endblock %}
