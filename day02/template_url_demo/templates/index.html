@@ -24,5 +24,10 @@
         <li><a href="{% url 'login' %}?next=/">登录</a></li>
         <li><a href="{% url 'detail' book_id=1 category=6 %}">最火的一篇文章</a></li>
     </ul>
+    {% autoescape off %}
+    {{ aa }}
+        {{ ss }}
+    {% endautoescape %}
+
 </body>
 </html>

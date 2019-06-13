@@ -2,7 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request,'index.html')
+    context = {
+        "aa":"<a href='http://www.so.com'>千锋教育</a>",
+        "ss":"<script>alert(666)</script>",
+    }
+    return render(request,'index.html',context=context)
 
 def login(request):
     next = request.GET.get('next')
