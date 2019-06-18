@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Article,Category
-from datetime import datetime
+from datetime import datetime,time
+from django.utils.timezone import make_aware
 
 # Create your views here.
 def index(request):
@@ -46,8 +47,45 @@ def index3(request):
     return HttpResponse("index3")
 
 def index4(request):
+    # aricles = Article.objects.filter(id__lte=2)
+    # aricles = Article.objects.filter(id__lt=2)
+    # aricles = Article.objects.filter(id__gt=2)
     aricles = Article.objects.filter(id__gte=2)
     print(aricles.query)
     print(aricles)
     return HttpResponse("index4")
 
+def index5(request):
+    start_time = make_aware(datetime(year=2018,month=12,day=13,hour=11,minute=13,second=14))
+    end_time = make_aware(datetime(year=2019,month=12,day=13,hour=11,minute=13,second=14))
+    articles = Article.objects.filter(create_time__range=(start_time,end_time))
+    print(articles.query)
+    for article in articles:
+        print(article)
+    return HttpResponse("index5")
+
+def index5(request):
+    start_time = time(hour=11, minute=13, second=14)
+    end_time = time(hour=21, minute=13, second=14)
+    # articles = Article.objects.filter(create_time__date=datetime(year=2018,month=6,day=6))
+    # articles = Article.objects.filter(create_time__year__gte=2018)
+    # articles = Article.objects.filter(create_time__week_day=4)
+    articles = Article.objects.filter(create_time__time__range=(start_time,end_time))
+    print(articles.query)
+    for article in articles:
+        print(article)
+    return HttpResponse("index5")
+
+def index6(request):
+    # aricles = Article.objects.filter(create_time__isnull=False)
+    aricles = Article.objects.filter(title__iregex=r"^hello")
+    print(aricles.query)
+    for aricle in aricles:
+        print(aricle)
+    return HttpResponse("index6")
+
+def index7(request):
+    categories = Category.objects.filter(articles__title__contains="hello")
+    print(categories.query)
+    print(categories)
+    return HttpResponse("index7")

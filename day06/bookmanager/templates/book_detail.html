@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+图书详情页
+{% endblock %}
+
+{% block content %}
+<table class="table table-bordered">
+    <tr>
+        <td>书名</td>
+        <td>{{ book.1 }}</td>
+    </tr>
+    <tr>
+        <td>作者</td>
+        <td>{{ book.2 }}</td>
+    </tr>
+    <tr>
+        <td>价格</td>
+        <td>{{ book.3 }}</td>
+    </tr>
+</table>
+<form class="form-inline" action="{% url 'delete_book' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="book_id" value="{{ book.0 }}">
+    <button type="submit" class="btn btn-primary">删除</button>
+</form>
+{% endblock %}

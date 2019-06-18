@@ -1,4 +1,4 @@
-"""lookup_demo URL Configuration
+"""bookmanager URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -18,5 +18,8 @@ from django.urls import path
 from front import views
 
 urlpatterns = [
-    path('', views.index7),
+    path('',views.index,name='index'),
+    path('add_book/',views.add_book,name='add_book'),
+    path('book_detail/<book_id>/',views.book_detail,name='book_detail'),
+    path('delete_book',views.delete_book,name='delete_book'),
 ]
