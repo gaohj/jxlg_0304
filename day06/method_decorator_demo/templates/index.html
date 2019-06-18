@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<ul>
+    {% for article in articles %}
+        <li>{{ article.title }}/{{ article.content }}</li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>

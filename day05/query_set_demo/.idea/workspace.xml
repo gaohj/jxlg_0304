@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7d7b80f-b411-4dc7-be36-8bd3a0f6e778" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/migrations/0002_bookorder_create_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lookup_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lookup_demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1984dd6f-678f-4fd0-8e97-b568f13ccef4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query_set_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/query_set_demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day06/bookmanager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day06/bookmanager/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d7d7b80f-b411-4dc7-be36-8bd3a0f6e778" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +45,7 @@
     <session id="1872730038">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="2" />
@@ -262,7 +253,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25358167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
