@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0881586f-0a77-443b-9d32-246fe2c43ed1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../day06/classview_demo/classview_demo/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day06/classview_demo/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../day06/classview_demo/templates/add_book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error_demo/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/templates/errors/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/templates/errors/405.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day06/classview_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day06/classview_demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day06/classview_demo/classview_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../day06/classview_demo/classview_demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day06/method_decorator_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day06/method_decorator_demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0881586f-0a77-443b-9d32-246fe2c43ed1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +15,7 @@
     <session id="-594526802">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -93,7 +78,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/error_demo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
+            <state relative-caret-position="339">
               <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="e#634#666#0" expanded="true" />
@@ -267,10 +252,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="manage.py@error_demo" weight="0.58355796" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -379,7 +363,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/error_demo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state relative-caret-position="339">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
