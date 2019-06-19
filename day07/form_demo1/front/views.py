@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import View
-from .forms import MessageBoardForm
+from .forms import MessageBoardForm,RegisterForm
 from django.http import HttpResponse
+from .models import User
 
 # Create your views here.
 
@@ -28,4 +29,20 @@ class IndexView(View):
         else:
             print(form.errors.get_json_data())
             return HttpResponse("FAIL")
+
+class RegisterView(View):
+    def get(self,request):
+        return render(request,'register.html')
+    def post(self,request):
+        forms = RegisterForm(request.POST)
+        if forms.is_valid():
+            username = forms.cleaned_data.get('username')
+            telephone = forms.cleaned_data.get('telephone')
+            email = forms.cleaned_data.get('email')
+            User.objects.create(username=username,telephone=telephone,email=email)
+            return HttpResponse("注册成功")
+        else:
+            print(forms.errors.get_json_data())
+            return HttpResponse("注册失败")
+
 
