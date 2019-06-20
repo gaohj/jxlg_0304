@@ -1,0 +1,18 @@
+
+淘票票App 
+项目一: 千锋教育  http://www.qfedu.com     开发周期 : 1年及以上  
+开发工具:CentOS6.8+Python3.6+Django2.0+Mysql5.6+Celery+Redis3+Git 
+项目描述:
+     目前是版本1.0 目标人群:   日均pv:
+项目职责:
+     1.需求分析
+     2.RESTful风格接口开发 
+     3.负责什么模块  
+     4.功能迭代 
+技术要点:
+     1.DjangoRestframwork 
+      最好的排在最前面  
+
+
+
+ 
