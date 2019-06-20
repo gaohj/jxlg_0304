@@ -19,4 +19,5 @@ from front import views
 
 urlpatterns = [
     path('add_book/',views.add_book,name='add'),
+    path('register/',views.register,name='register'),
 ]

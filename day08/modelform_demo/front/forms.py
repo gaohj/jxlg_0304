@@ -1,5 +1,5 @@
 from django import forms
-from .models import Book
+from .models import Book,User
 class MyForm(forms.Form):
     # username = forms.URLField(max_length=4)
 
@@ -39,3 +39,21 @@ class AddBookForm(forms.ModelForm,MyForm):
                 'max_value':"图书价格不能超过1000元"
             }
         }
+
+
+class RegisterForm(forms.ModelForm):
+    pwd1 = forms.CharField(max_length=30,min_length=6)
+    pwd2 = forms.CharField(max_length=30,min_length=6)
+
+    #走到这里说明所有的字段都验证成功了
+
+    def clean(self):
+        cleaned_data = super(RegisterForm, self).clean()
+        pwd1 = self.cleaned_data.get('pwd1')
+        pwd2 = self.cleaned_data.get('pwd2')
+        if pwd1 != pwd2:
+            raise forms.ValidationError("两次密码输入不一致")
+        return cleaned_data
+    class Meta:
+        model = User
+        exclude = ['password']
