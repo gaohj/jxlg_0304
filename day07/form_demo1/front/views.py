@@ -42,7 +42,7 @@ class RegisterView(View):
             User.objects.create(username=username,telephone=telephone,email=email)
             return HttpResponse("注册成功")
         else:
-            print(forms.errors.get_json_data())
+            print(forms.get_errors())
             return HttpResponse("注册失败")
 
 
