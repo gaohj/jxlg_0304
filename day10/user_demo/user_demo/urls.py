@@ -22,4 +22,5 @@ urlpatterns = [
     path('',views.index,name='index'),
     # path('proxy/',views.proxy_view,name='proxy'),
     path('one/',views.one_view,name='one'),
+    path('inherit/',views.inherit_view,name='inherit'),
 ]
