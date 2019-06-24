@@ -5,4 +5,5 @@
 {% block body %}
 Index   {{ request.path }}
     <img src="{{ MEDIA_URL }}timg.jpg" alt="">
+    {{ debug }} / {{ sql_queries }}
 {% endblock %}
