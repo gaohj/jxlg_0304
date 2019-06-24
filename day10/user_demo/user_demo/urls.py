@@ -20,5 +20,6 @@ from front import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
-    path('proxy/',views.proxy_view,name='proxy'),
+    # path('proxy/',views.proxy_view,name='proxy'),
+    path('one/',views.one_view,name='one'),
 ]

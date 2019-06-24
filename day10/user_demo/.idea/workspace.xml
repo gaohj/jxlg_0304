@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c6c5d1-270c-47cb-840c-168b59d989a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day09/context_professor_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day09/context_professor_demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day09/context_professor_demo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../day09/context_professor_demo/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day09/context_professor_demo/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../day09/context_professor_demo/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day09/middle_ware_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day09/middle_ware_demo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/migrations/0002_userextension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0d978201-225c-4a62-ae80-45d49d1296ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0d978201-225c-4a62-ae80-45d49d1296ba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_demo/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,25 +59,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="662" />
-          <entry key="py@user_demo" value="14" />
+          <entry key="py" value="1447" />
+          <entry key="py@user_demo" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="14" />
-          <entry key="Python" value="662" />
+          <entry key="CommandLine" value="16" />
+          <entry key="Python" value="1447" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="auth_user" value="1" />
+          <entry key="front_userextension" value="1" />
           <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="1" />
+          <entry key="Database Element" value="2" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
@@ -96,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user_demo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="966">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -108,15 +107,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="605">
+              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1561361070067" expanded="true" signature="896:1032" ph="..." />
+                <marker date="1561363235631" expanded="true" signature="1145:1396" ph="..." />
+                <marker date="1561363235631" expanded="true" signature="1418:1843" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0d978201-225c-4a62-ae80-45d49d1296ba/schema/main/table/front_userextension">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -133,11 +142,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="588">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1561360915273" expanded="true" signature="121:256" ph="..." />
+                <marker date="1561362654192" expanded="true" signature="667:794" ph="..." />
               </folding>
             </state>
           </provider>
@@ -153,8 +162,8 @@
       <list>
         <option value="$PROJECT_DIR$/user_demo/settings.py" />
         <option value="$PROJECT_DIR$/front/models.py" />
-        <option value="$PROJECT_DIR$/front/views.py" />
         <option value="$PROJECT_DIR$/user_demo/urls.py" />
+        <option value="$PROJECT_DIR$/front/views.py" />
       </list>
     </option>
   </component>
@@ -312,11 +321,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="588">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1561360915273" expanded="true" signature="121:256" ph="..." />
+            <marker date="1561362654192" expanded="true" signature="667:794" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -328,23 +347,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1561361070067" expanded="true" signature="896:1032" ph="..." />
-          </folding>
+    <entry file="das://0d978201-225c-4a62-ae80-45d49d1296ba/schema/main/table/front_userextension">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_demo/urls.py">
+    <entry file="file://$PROJECT_DIR$/front/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="605">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
-            <element signature="e#633#665#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1561363235631" expanded="true" signature="1145:1396" ph="..." />
+            <marker date="1561363235631" expanded="true" signature="1418:1843" ph="..." />
           </folding>
         </state>
       </provider>
