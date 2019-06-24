@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect,reverse
 # from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 # Create your views here.
 # from .models import Person
 from .models import User
+from .forms import LoginForm
+
 
 def index(request):
     #user = User.objects.create_user(username='lixi',email='lixi@outlook.com',password='123456')
@@ -12,15 +15,15 @@ def index(request):
     # user = User.objects.get(pk=3)
     # user.set_password('654321')
     # user.save()
-    username = 'lushihao'
-    password = '654321'
-    user = authenticate(request,username=username,password=password)
-    if user:
-        print('%s用户验证成功' % user.username)
-    else:
-        print('用户登录失败')
+    # username = 'lushihao'
+    # password = '654321'
+    # user = authenticate(request,username=username,password=password)
+    # if user:
+    #     print('%s用户验证成功' % user.username)
+    # else:
+    #     print('用户登录失败')
     # user = User.objects.create_user(username='lixi', email='lixi@outlook.com', password='123456')
-    return HttpResponse("创建超级用户成功")
+    return render(request,'index.html')
 
 # def proxy_view(request):
 #
@@ -79,4 +82,40 @@ def inherit_view(request):
         print("验证失败")
     return HttpResponse("把原有的user模型字段全部打乱该留的留该删除的删除")
 
+
+def my_login(request):
+    if request.method == "GET":
+        return render(request,'login.html')
+    else:
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            telephone = form.cleaned_data.get('telephone')
+            password = form.cleaned_data.get('password')
+            remember = form.cleaned_data.get('remember')
+            user = authenticate(request,username=telephone,password=password)
+            if user and user.is_active:
+                login(request,user)
+                if remember:
+                    request.session.set_expiry(None)
+                else:
+                    request.session.set_expiry(0)
+                next_url = request.GET.get('next')
+                if next_url:
+                    return redirect(next_url)
+                else:
+                    return HttpResponse("登录成功")
+            else:
+                return HttpResponse("用户名或者密码失败")
+
+
+        else:
+            print(form.errors.get_json_data())
+            return redirect(reverse('index'))
+@login_required(login_url='/login/')
+def profile(request):
+    return HttpResponse("只有登录成功以后才可以查看到我")
+
+def my_logout(request):
+    logout(request)
+    return redirect(reverse('index'))
 
