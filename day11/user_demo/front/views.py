@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect,reverse
-from django.contrib.auth.models import User,ContentType,Permission
+from django.contrib.auth.models import User,ContentType,Permission,Group
 from django.contrib.auth import authenticate,login,logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required,permission_required
 from django.http import HttpResponse
 # Create your views here.
 # from .models import Person
@@ -146,5 +146,31 @@ def operate_permission(request):
         print("该用户没有查看文章的权限")
     print(user.get_all_permissions())
     return HttpResponse("操作权限成功")
+
+
+@permission_required(['front.view_article','front.black_article'],login_url='/login/',raise_exception=True)
+def add_article(request):
+    if request.user.is_authenticated:
+        print("已经登录了")
+        if request.user.has_perm('front.view_article'):
+            return HttpResponse("这是添加文章的页面")
+        else:
+            return HttpResponse("您没有访问该页面的权限",status=403)
+    else:
+        return redirect(reverse('login'))
+def operate_group(request):
+    # group = Group.objects.create(name='运营')
+    # content_type = ContentType.objects.get_for_model(Article)
+    # permissions = Permission.objects.filter(content_type=content_type)
+    # group.permissions.set(permissions)
+    # group.save()
+    # group = Group.objects.filter(name='运营').first()
+    # user = User.objects.get(pk=2)
+    # user.groups.add(group)
+    # user.save()
+    user = User.objects.get(pk=2)
+    permissions = user.get_group_permissions()
+    print(permissions)
+    return HttpResponse("操作分组成功")
 
 

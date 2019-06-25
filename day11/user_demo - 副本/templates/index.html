@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    我是首页
+    {% if perms.front.view_article %}
+        <a href="http://www.qfedu.com">千锋教育</a>
+    {% endif %}
+
+</body>
+</html>

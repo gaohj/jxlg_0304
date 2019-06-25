@@ -28,4 +28,6 @@ urlpatterns = [
     path('profile/',views.profile,name='profile'),
     path('add_permission/',views.add_permission,name='add_permission'),
     path('do_permission/',views.operate_permission,name='do_permission'),
+    path('do_group/',views.operate_group,name='do_group'),
+    path('add_article/',views.add_article,name='add_article'),
 ]
